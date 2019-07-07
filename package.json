@@ -1,0 +1,18 @@
+{
+  "name": "bootcampGoStack-Primeiro-projeto-com-React-Native",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hiagofss/bootcampGoStack-SSR-NextJS.git",
+  "author": "Hiago Souza <hiagofss98@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  }
+}
