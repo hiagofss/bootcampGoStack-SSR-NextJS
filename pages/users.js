@@ -4,8 +4,6 @@ import axios from 'axios';
 import Link from 'next/link';
 import Head from 'next/head';
 
-// import { Container } from './styles';
-
 const User = ({ users }) => (
   <div>
     <Head>
