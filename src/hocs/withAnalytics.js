@@ -4,7 +4,7 @@ import ReactGA from 'react-ga';
 
 export default () => Composed =>
   class extends Component {
-    static loadGetInitialProps(ctx) {
+    static getInitialProps(ctx) {
       return loadGetInitialProps(Composed, ctx);
     }
 
