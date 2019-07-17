@@ -3,15 +3,17 @@ import axios from 'axios';
 
 import withAnalytics from '../src/hocs/withAnalytics';
 
-const Detail = ({ user }) => {
+const Detail = ({ user }) => (
   <div>
     <h1>{user.login}</h1>
-    <img src={user.avatar_url} alt="" />
-  </div>;
-};
+    <img src={user.avatar_url} width="200" />
+  </div>
+);
 
-Detail.getInitialProps = async () => {
-  const response = await axios.get(`https://api.github.com/users/diego3g`);
+Detail.getInitialProps = async ({ query }) => {
+  const response = await axios.get(
+    `https://api.github.com/users/${query.user}`
+  );
 
   return { user: response.data };
 };
